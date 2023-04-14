@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practico - Formularios HTML</title>
+</head>
+<body style="font-family: 'Tahoma';font-size: 14px;">
+    <form method="get" action="">
+        <table>
+            <tr>
+                <td><label for="txtRut">Rut</label></td>
+                <td><input type="text" id="txtRut" name="txtRut" value="15.932.623-3" readonly></td>
+                <td>Input de tipo text con solo lectura (readonly)</td>
+            </tr>
+            <tr>
+                <td><label for="txtNombre">Nombre</label></td>
+                <td><input type="text" id="txtNombre" name="txtNombre" maxlength="20" required></td>
+                <td>Input de tipo text</td>
+            </tr>
+            <tr>
+                <td><label for="txtEmail">Email</label></td>
+                <td><input type="email" id="txtEmail" name="txtEmail" required></td>
+                <td>Input de tipo text con formato email</td>
+            </tr>
+            <tr>
+                <td><label for="txtTelefono">Telefono</label></td>
+                <td><input type="tel" id="txtTelefono" name="txtTelefono" required></td>
+                <td>Input de tipo text con formato telefono</td>
+            </tr>
+            <tr>
+                <td><label for="txtComentario">Comentario</label></td>
+                <td><textarea id="txtComentario" name="txtComentario" required cols="20" rows="5"></textarea></td>
+                <td>Input de tipo texto abierto</td>
+            </tr>
+        </table>
+                
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar</button>
+    </form>
+    
+</body>
+</html>

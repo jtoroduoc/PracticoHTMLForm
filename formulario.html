@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practico - Formularios HTML</title>
+</head>
+<body style="font-family: 'Tahoma';font-size: 14px;">
+
+    <form>
+        <table>
+            <tr>
+                <td><label for="txtRut">Rut</label></td>
+                <td><input type="text" id="txtRut" value="15.932.623-3" readonly></td>
+                <td>Input de tipo text con solo lectura (readonly)</td>
+            </tr>
+            <tr>
+                <td><label for="txtNombre">Nombre</label></td>
+                <td><input type="text" id="txtNombre" maxlength="20" required></td>
+                <td>Input de tipo text</td>
+            </tr>
+            <tr>
+                <td><label for="txtEmail">Email</label></td>
+                <td><input type="email" id="txtEmail" required></td>
+                <td>Input de tipo text con formato email / telefono / url</td>
+            </tr>
+            <tr>
+                <td><label for="txtEdad">Edad</label></td>
+                <td><input type="number" id="txtEdad" min="1" max="99" required></td>
+                <td>Input de tipo númerico</td>
+            </tr>
+            <tr>
+                <td><label for="txtFechaNacimiento">Fecha Nacimiento</label></td>
+                <td><input type="date" id="txtFechaNacimiento" required></td>
+                <td>Input de tipo fecha</td>
+            </tr>
+            <tr>
+                <td><label for="chkEsAlergico">Es Alergico</label></td>
+                <td><input type="checkbox" id="chkEsAlergico"></td>
+                <td>Input de tipo Checkbox (True o False)</td>
+            </tr>
+            <tr>
+                <td><label for="rbtGenero">Genero</label></td>
+                <td>
+                    <input type="radio" id="rbtFemenino" name="rbtGenero"> Femenino <br>
+                    <input type="radio" id="rbtMasculino" name="rbtGenero"> Masculino <br>
+                    <input type="radio" id="rbtOtro" name="rbtGenero" checked> Otro
+                </td>
+                <td>Input de tipo radio (agrupador excluyente)</td>
+            </tr>
+            <tr>
+                <td><label for="txtColorOjos">Color Ojos</label></td>
+                <td><input type="color" id="txtColorOjos" required></td>
+                <td>Input de tipo de color</td>
+            </tr>
+            <tr>
+                <td><label for="txtCurriculum">Curriculum</label></td>
+                <td><input type="file" id="txtCurriculum"></td>
+                <td>Input de tipo archivo (subir documento)</td>
+            </tr>
+            <tr>
+                <td><label for="txtPassword">Password</label></td>
+                <td><input type="password" id="txtPassword"></td>
+                <td>Input de tipo text con password (*****)</td>
+            </tr>
+            <tr>
+                <td><label for="ddlPais">Pais</label></td>
+                <td>
+                    <select id="ddlPais">
+                        <optgroup label="Latinoamerica">
+                            <option value="CL">Chile</option>
+                            <option value="BR">Brasil</option>
+                            <option value="AR">Argentina</option>
+                            <option value="PE" disabled>Perú</option>
+                        </optgroup>
+                    </select>
+                </td>
+                <td>Input de tipo seleccion</td>
+            </tr>
+            <tr>
+                <td><label for="txtResumen">Resumen</label></td>
+                <td><textarea id="txtResumen" cols="20" rows="5"></textarea></td>
+                <td>Input de tipo texto abierto</td>
+            </tr>
+        </table>
+                
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar</button>
+    </form>
+    
+</body>
+</html>
